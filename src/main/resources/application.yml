@@ -12,4 +12,4 @@ keycloak:
   resource: ${KEYCLOAK_CLIENT_ID:sample_application}
   public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
   credentials:
-    secret: ${CLIENT_SECRET}
+    secret: ${CLIENT_SECRET:5880501c-02ee-4893-9a71-2c05c959bcbc}
