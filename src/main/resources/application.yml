@@ -7,8 +7,9 @@ spring:
       enabled: true
 
 keycloak:
-  realm: javatechie
-  auth-server-url: http://localhost:8180/auth
-  resource: springboot-keycloak
-  public-client: true
-  bearer-only: true
+  realm: ${KEYCLOAK_RELM:test}
+  auth-server-url:  ${KEYCLOAK_URL:https://keycloak-ansible-rhsso-operator.apps.cluster-dds8v.dds8v.sandbox1980.opentlc.com}
+  resource: ${KEYCLOAK_CLIENT_ID:sample_application}
+  public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
+  credentials:
+    secret: ${CLIENT_SECRET}
