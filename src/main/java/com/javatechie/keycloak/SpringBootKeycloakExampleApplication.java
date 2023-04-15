@@ -16,24 +16,29 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/")
 public class SpringBootKeycloakExampleApplication {
 
     @Autowired
     private EmployeeService service;
 
     //this method can be accessed by user whose role is user
-    @GetMapping("/{employeeId}")
+    @GetMapping("/{employeeID}")
     @RolesAllowed("user")
     public ResponseEntity<Employee> getEmployee(@PathVariable int employeeId) {
         return ResponseEntity.ok(service.getEmployee(employeeId));
     }
 
     //this method can be accessed by user whose role is admin
-    @GetMapping
+    @GetMapping("/admin")
     @RolesAllowed("admin")
     public ResponseEntity<List<Employee>> findALlEmployees() {
         return ResponseEntity.ok(service.getAllEmployees());
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Employee>> home() {
+        return "Joie de vivre (/ˌʒwɑː də ˈviːv(rə)/ ZHWAH də VEEV(-rə), French: [ʒwa d(ə) vivʁ] (listen); \"joy of living\") is a French phrase often used in English to express a cheerful enjoyment of life, an exultation of spirit.
     }
 
     public static void main(String[] args) {
