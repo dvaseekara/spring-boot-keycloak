@@ -37,8 +37,8 @@ public class SpringBootKeycloakExampleApplication {
     }
 
     @GetMapping
-    public ResponseEntity<List<Employee>> home() {
-        return "Joie de vivre (/ˌʒwɑː də ˈviːv(rə)/ ZHWAH də VEEV(-rə), French: [ʒwa d(ə) vivʁ] (listen); \"joy of living\") is a French phrase often used in English to express a cheerful enjoyment of life, an exultation of spirit.
+    public String home() {
+        return "Joie de vivre (/ˌʒwɑː də ˈviːv(rə)/ ZHWAH də VEEV(-rə), French: [ʒwa d(ə) vivʁ] (listen); \"joy of living\") is a French phrase often used in English to express a cheerful enjoyment of life, an exultation of spirit.";
     }
 
     public static void main(String[] args) {
