@@ -8,7 +8,7 @@ spring:
 
 keycloak:
   realm: ${KEYCLOAK_RELM:test}
-  auth-server-url:  ${KEYCLOAK_URL:https://keycloak-ansible-rhsso-operator.apps.cluster-dds8v.dds8v.sandbox1980.opentlc.com/auth}
+  auth-server-url:  ${KEYCLOAK_URL:https://keycloak-rhsso.apps.cluster-w47t2.w47t2.sandbox255.opentlc.com/auth}/auth
   resource: ${KEYCLOAK_CLIENT_ID:sample_application}
   public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
   credentials:
