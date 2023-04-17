@@ -10,9 +10,10 @@ import javax.annotation.security.RolesAllowed;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/")
 public class SpringBootKeycloakExampleApplication {
     //this method can be accessed by user whose role is user
+
+    @GetMapping("/")
 	public String home() {
 		return "Greetings from Spring Boot Service A!";
 	}
