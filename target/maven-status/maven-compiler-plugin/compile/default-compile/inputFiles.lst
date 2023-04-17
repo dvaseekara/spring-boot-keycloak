@@ -1,5 +1,2 @@
-/home/dvaseekara3/Documents/workspace/spring-rhsso-poc/spring-boot-keycloak/src/main/java/com/ibc/keycloak/entity/Employee.java
-/home/dvaseekara3/Documents/workspace/spring-rhsso-poc/spring-boot-keycloak/src/main/java/com/ibc/keycloak/service/EmployeeService.java
 /home/dvaseekara3/Documents/workspace/spring-rhsso-poc/spring-boot-keycloak/src/main/java/com/ibc/keycloak/SpringBootKeycloakExampleApplication.java
 /home/dvaseekara3/Documents/workspace/spring-rhsso-poc/spring-boot-keycloak/src/main/java/com/ibc/keycloak/config/SecurityConfig.java
-/home/dvaseekara3/Documents/workspace/spring-rhsso-poc/spring-boot-keycloak/src/main/java/com/ibc/keycloak/repository/EmployeeRepository.java
