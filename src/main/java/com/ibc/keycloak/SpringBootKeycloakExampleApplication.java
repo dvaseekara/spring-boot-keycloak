@@ -23,7 +23,7 @@ public class SpringBootKeycloakExampleApplication {
 		return "Greetings User!";
 	}
 
-	@GetMapping("/users")
+	@GetMapping("/admins")
     @RolesAllowed("admin")
 	public String admins() {
 		return "Greetings Admin!";
