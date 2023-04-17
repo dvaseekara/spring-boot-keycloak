@@ -7,7 +7,7 @@ spring:
       enabled: true
 
 keycloak:
-  realm: ${KEYCLOAK_RELM:test}
+  realm: ${KEYCLOAK_REALM:test}
   auth-server-url:  ${KEYCLOAK_URL:https://keycloak-rhsso.apps.cluster-w47t2.w47t2.sandbox255.opentlc.com/auth}/auth
   resource: ${KEYCLOAK_CLIENT_ID:sample_application}
   public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
