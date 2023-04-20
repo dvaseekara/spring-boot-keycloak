@@ -12,5 +12,6 @@ keycloak:
   resource: ${KEYCLOAK_CLIENT_ID:sample_application}
   public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
   ssl-required: none
+  disable-trust-manager: true
   credentials:
     secret: ${CLIENT_SECRET:5880501c-02ee-4893-9a71-2c05c959bcbc}
