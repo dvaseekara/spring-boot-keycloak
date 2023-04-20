@@ -11,6 +11,6 @@ keycloak:
   auth-server-url:  ${KEYCLOAK_URL:https://keycloak-rhsso.apps.cluster-w47t2.w47t2.sandbox255.opentlc.com/auth}/auth
   resource: ${KEYCLOAK_CLIENT_ID:sample_application}
   public-client: ${KEYCLOAK_PUBLIC_CLIENT:true}
-  ssl-required: none
+  ssl-required: external
   credentials:
     secret: ${CLIENT_SECRET:5880501c-02ee-4893-9a71-2c05c959bcbc}
